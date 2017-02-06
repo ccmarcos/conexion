@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Mostrar conexiones</title>
+	<link rel="stylesheet" type="text/css" href="estilos/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<script type="text/javascript">
+
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+    </script>
+</head>
+<body>
+	<p id="titulo">Consultor</p>
+<!--	<div class="salir">
+		<a href="{{log_route}}" class="btn-salir">Cerrar sesión</a>
+	</div>-->
+	<div class="container">
+		<p class="tarea"><strong>Conexiones</strong></p>
+		<hr size="1px" color="BDC2C9" class="linea"/>
+		<div class="scrol">
+<!--EN ESTA PARTE VA A IR LA INFORMACION-->
+		<div class="contenedor2" id="contenedordos">
+			<a href="#" class="info" onclick="cambiar_fondo();">
+			<div class="div-info">
+				<ul class="lista">
+					<li class="info">Información de las conexiones</li>
+				</ul>
+			</div>
+			</a>
+			<hr size="1px" color="BDC2C9" class="linea"/>
+		</div>
+
+		<div class="contenedor2" id="contenedordos">
+			<a href="#" class="info">
+			<div class="div-info">
+				<ul class="lista">
+					<li class="info">Información de las conexiones</li>
+				</ul>
+			</div>
+			</a>
+			<hr size="1px" color="BDC2C9" class="linea"/>
+		</div>
+<!--FIN DEL CONTENEDOR QUE VA A MOSTRAR LA INFORMACION-->
+	</div>
+	<div class="div-registrar">
+		<input type="submit" value="Eliminar" class="btn-eliminar">
+		<input href="javascript:void(0)" onclick="toggle_visibility('popup-box1');" type="button" name="modificar" value="Editar" class="btn-editar">
+	</div>
+	</div>
+
+	<div id="popup-box1" class="posicion-popup">
+		      <div id="envoltura">
+		        <p class="boton-x"><a href="javascript:void(0)" onclick="toggle_visibility('popup-box1');" class="boton-x">X</a></p>
+
+						<div id="contenedor-popup">
+							<div class="contenedor-inputs">
+							<strong><p class="texto-editar-conexion">Editar Conexión</p></strong><br>
+
+							<div class="form-input">
+							<input type="text" name="nombre" placeholder="Nombre">
+							</div><!--find del form1-->
+
+							<div class="form-input">
+								<input type="text" name="descripcion" placeholder="Descripción">
+							</div><!--fin del form2-->
+
+							<div class="form-input">
+								<input type="text" name="index" placeholder="Index">
+							</div><!--find del form3-->
+
+							<div class="form-input">
+								<input type="text" name="claveEdicion" placeholder="Clave de edición">
+							</div><!--find del form4-->
+
+						</div><!--fin del contenedor de los inputs-->
+							<p><a href="javascript:void(0)" onclick="toggle_visibility('popup-box1');" onclick="this.form.submit()" class="btn-crear">Guardar</a></p>
+							<p><a href="javascript:void(0)" onclick="toggle_visibility('popup-box1');" class="btn-crear">Cancelar</a></p>
+
+		        </div><!--popup container end-->
+		      </div><!--popup wrapper popup end-->
+		    </div><!--popup box 1 end-->
+
+</body>
+</html>

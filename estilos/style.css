@@ -1,0 +1,186 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.container{
+  width:500px;
+  height:600px;
+  position:absolute;
+  top: 100px;
+  left:50%;
+  margin-left: -250px;  /* 50% del ancho de la div en px */
+}
+.scrol{
+  overflow:scroll;
+  height: 550px;
+  overflow-x: hidden;
+}
+#titulo{
+	text-align: center;
+	font-size: 2.5em;
+	color:#9a9a9a;
+}
+
+.tarea{
+  width: 400px;
+  color: #55555c;
+  margin-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+}
+
+.salir{
+  position: absolute;
+  top: 60px;
+  right: 12%;
+}
+
+.texto{
+  font-size: 17px;
+  float: left;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#primer-form{
+  padding-top: 35px;
+}
+
+.btn-salir{
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background-color: #0f75e0;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.div-registrar{
+  position: absolute;
+  right: 0;
+}
+
+.btn-editar{
+  width: 90px;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background-color: #0f75e0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-eliminar{
+  width: 90px;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background-color: #ff1a1a;
+  font-family: 'Ubuntu', sans-serif;
+}
+.btn-editar:hover{
+  background-color: #2889f0;
+}
+.btn-eliminar:hover{
+  background-color: #ff3333;
+}
+.btn-registrar:hover{
+  background-color: #4965b5;
+}
+
+.btn-salir:hover{
+  background-color: #4965b5;
+}
+
+.info{
+  text-decoration: none;
+  list-style: none;
+  color: 	#4d4d4d;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contenedor2:hover{
+  background-color: #f2f2f2;
+}
+
+
+/*estilos del popup*/
+
+.posicion-popup{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+}
+
+#envoltura{
+  width: 500px;
+  margin: 70px auto;
+  text-align: left;
+}
+
+#contenedor-popup{
+  background-color: #FFF;
+  padding: 60px;
+  -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+input[type="text"],input[type="password"],input[type="email"]{
+  height: 37px;
+  width: 200px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding-left: 40px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border: 1px solid #BDC2C9;
+}
+
+.contenedor-inputs{
+	position: relative;
+	left: 65px;
+}
+
+input:focus {
+/*border:2px solid #6392c5;*/
+/*background-color:#F0F8FF;*/
+/*margin-right:10px;*/
+outline:0px;
+-webkit-box-shadow: 0 0 2px 2px #6392c5;
+-moz-box-shadow: 0 0 2px 2px #6392c5;
+box-shadow: 0 0 2px 2px #6392c5;
+}
+
+.texto-editar-conexion{
+	font-size: 23px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-crear{
+	float: right;
+	color: #0f75e0;
+	text-decoration: none;
+	font-family: 'Ubuntu', sans-serif;
+	padding: 15px;
+	font-size: 19px;
+}
+
+.boton-x{
+	text-align: right;
+	color: white;
+	text-decoration: none;
+	padding-bottom: 5px;
+	font-size: 21px;
+}
